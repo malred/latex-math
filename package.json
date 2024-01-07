@@ -18,7 +18,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "vite-dev": "vite .",
-    "tauri-build": "tauri build"
+    "tauri-build": "tauri build",
+    "tauri-dev": "tauri dev"
   },
   "dependencies": {
     "antd": "^5.12.8",

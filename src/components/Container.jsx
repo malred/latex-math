@@ -2,7 +2,7 @@ import TextArea from "antd/es/input/TextArea";
 import {useState} from "react";
 import {Card, Collapse, Select, Tag} from "antd";
 import {MathJaxFormula} from "mathjax3-react";
-import {BinaryOperator, others, BinaryRelations} from "../constants/selectOptions";
+import {BinaryOperator, Greek,FlowerFont, others, BinaryRelations} from "../constants/selectOptions";
 import {MyTags} from "./MyTags";
 
 export const Container = () => {
@@ -30,20 +30,23 @@ export const Container = () => {
             key: 'others',
             label: '特殊符号',
         },
+        {
+            key: 'greek',
+            label: '希腊字母',
+        },
+        {
+            key: 'flower',
+            label: '花体字',
+        },
     ];
 
     const contentListNoTitle = {
         BinaryOperator: <MyTags onTagClick={onTagClick} opts={BinaryOperator}></MyTags>,
         BinaryRelations: <MyTags onTagClick={onTagClick} opts={BinaryRelations}></MyTags>,
         others: <MyTags onTagClick={onTagClick} opts={others}></MyTags>,
+        greek: <MyTags onTagClick={onTagClick} opts={Greek}></MyTags>,
+        flower: <MyTags onTagClick={onTagClick} opts={FlowerFont}></MyTags>,
     };
-
-    // const items = [
-    //     {
-    //         key: '1', label: '二元运算符',
-    //         children: <MyTags onTagClick={onTagClick} opts={BinaryOperator}></MyTags>
-    //     }
-    // ]
 
     return (
         <div className={'m-12'}>
@@ -76,7 +79,7 @@ export const Container = () => {
             {/*<MathJax>{`\\(W \\gets W - \\eta \\frac{\\partial L}{\\partial W}\\)`}</MathJax>*/}
             {/*W \gets W - \eta \frac{\partial L}{\partial W}*/}
             <Card className={'my-8'} title="解析结果" bordered={false}>
-                <MathJaxFormula formula={'$$' + math + '$$'}/>
+                <MathJaxFormula formula={`$$ ${math.replaceAll('$$', '')} $$`}/>
             </Card>
         </div>
     )
