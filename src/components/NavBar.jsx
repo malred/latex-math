@@ -1,19 +1,5 @@
 import {Fragment, useState} from 'react'
-import {Dialog, Disclosure, Popover, Transition} from '@headlessui/react'
-import {
-    ArrowPathIcon,
-    Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
-import {ChevronDownIcon, PhoneIcon, PlayCircleIcon} from '@heroicons/react/20/solid'
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export const NavBar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -33,12 +19,9 @@ export const NavBar = () => {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
                     </button>
                 </div>
             </nav>
-            <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-10"/>  </Dialog>
         </header>
     )
 }
