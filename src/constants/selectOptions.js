@@ -156,6 +156,38 @@ export const BigOperator = [
         label: '组合2',
         value: 'C_n^k',
     },
+    {
+        label: '⨀',
+        value: '\\bigodot',
+    },
+    {
+        label: '⨂',
+        value: '\\bigotimes',
+    },
+    {
+        label: '⨁',
+        value: '\\bigoplus',
+    },
+    {
+        label: '⨄',
+        value: '\\biguplus',
+    },
+    {
+        label: '∏',
+        value: '\\prod',
+    },
+    {
+        label: '∐',
+        value: '\\coprod',
+    },
+    {
+        label: '∮',
+        value: '\\oint',
+    },
+    {
+        label: '⨆',
+        value: '\\bigsqcup',
+    },
 ]
 
 // 其他符号
@@ -311,5 +343,81 @@ export const FlowerFont = [
     {
         label: 'san-serif',
         value: '\\mathsf{Aa,Rr,Kk}',
+    },
+]
+
+// 箭头
+export const Arrows =[
+    {
+        label: '←',
+        value: '\\gets',
+    },
+    {
+        label: '→',
+        value: '\\to',
+    },
+    {
+        label: '⇐',
+        value: '\\Leftarrow',
+    },
+    {
+        label: '⇒',
+        value: '\\Rightarrow',
+    },
+    {
+        label: '↔',
+        value: '\\leftrightarrow',
+    },
+    {
+        label: '⇔',
+        value: '\\Leftrightarrow',
+    },
+    {
+        label: '↦',
+        value: '\\mapsto',
+    },
+    {
+        label: '↩',
+        value: '\\hookleftarrow',
+    },
+    {
+        label: '↼',
+        value: '\\leftharpoonup',
+    },
+    {
+        label: '↽',
+        value: '\\leftharpoondown',
+    },
+    {
+        label: '⇌',
+        value: '\\rightleftharpoons',
+    },
+    {
+        label: '↑',
+        value: '\\uparrow',
+    },
+    {
+        label: '⇝',
+        value: '\\leadsto',
+    },
+    {
+        label: '↕',
+        value: '\\updownarrow',
+    },
+    {
+        label: '↗',
+        value: '\\nearrow',
+    },
+    {
+        label: '↘',
+        value: '\\searrow',
+    },
+    {
+        label: '↙',
+        value: '\\swarrow',
+    },
+    {
+        label: '↖',
+        value: '\\nwarrow',
     },
 ]

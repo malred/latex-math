@@ -2,7 +2,15 @@ import TextArea from "antd/es/input/TextArea";
 import {useState} from "react";
 import {Card, Collapse, Select, Tag} from "antd";
 import {MathJaxFormula} from "mathjax3-react";
-import {BinaryOperator, Greek, FlowerFont, others, BinaryRelations, BigOperator} from "../constants/selectOptions";
+import {
+    BinaryOperator,
+    Arrows,
+    Greek,
+    FlowerFont,
+    others,
+    BinaryRelations,
+    BigOperator
+} from "../constants/selectOptions";
 import {MyTags} from "./MyTags";
 
 export const Container = () => {
@@ -42,6 +50,10 @@ export const Container = () => {
             key: 'flower',
             label: '花体字',
         },
+        {
+            key: 'arrows',
+            label: '箭头',
+        },
     ];
 
     const contentListNoTitle = {
@@ -51,11 +63,12 @@ export const Container = () => {
         greek: <MyTags onTagClick={onTagClick} opts={Greek}></MyTags>,
         flower: <MyTags onTagClick={onTagClick} opts={FlowerFont}></MyTags>,
         big: <MyTags onTagClick={onTagClick} opts={BigOperator}></MyTags>,
+        arrows: <MyTags onTagClick={onTagClick} opts={Arrows}></MyTags>,
     };
 
     return (
         <div className={'m-12'}>
-            <Card className={'my-8'} title="latex公式" bordered={false}>
+            <Card className={'my-8 text-xl'} title="latex公式" bordered={false}>
                 {/*<Collapse*/}
                 {/*    className={'w-1/4'}*/}
                 {/*    items={items}*/}
@@ -75,6 +88,7 @@ export const Container = () => {
                 </Card>
 
                 <TextArea rows={4}
+                          rootClassName={' text-xl'}
                           onClick={() => {
                               setActiveTabKey2('')
                           }}
@@ -83,7 +97,7 @@ export const Container = () => {
             </Card>
             {/*<MathJax>{`\\(W \\gets W - \\eta \\frac{\\partial L}{\\partial W}\\)`}</MathJax>*/}
             {/*W \gets W - \eta \frac{\partial L}{\partial W}*/}
-            <Card className={'my-8'} title="解析结果" bordered={false}>
+            <Card className={'my-8 text-xl'} title="解析结果" bordered={false}>
                 <MathJaxFormula formula={`$$ ${math.replaceAll('$$', '')} $$`}/>
             </Card>
         </div>
