@@ -24,6 +24,58 @@ export const BinaryRelations = [
         label: '小于 <',
         value: '\\lt',
     },
+    {
+        label: '大于 >',
+        value: '\\gt',
+    },
+    {
+        label: '远小于 ≪',
+        value: '\\ll',
+    },
+    {
+        label: '远大于 ≫',
+        value: '\\gg',
+    },
+    {
+        label: '小等 ≤',
+        value: '\\leq',
+    },
+    {
+        label: '大等 ≥',
+        value: '\\geq',
+    },
+    {
+        label: '不等',
+        value: '\\neq',
+    },
+    {
+        label: '恒等',
+        value: '\\equiv',
+    },
+    {
+        label: '属于',
+        value: '\\in',
+    },
+    {
+        label: '不属于',
+        value: '\\notin',
+    },
+    {
+        label: '包含于',
+        value: '\\subset',
+    },
+    {
+        label: '包含',
+        value: '\\supset',
+    },
+    {
+        label: '真包含于',
+        value: '\\subseteq',
+    },
+    {
+        label: '真包含',
+        value: '\\supseteq',
+    },
 ]
 
 // 大型运算符
