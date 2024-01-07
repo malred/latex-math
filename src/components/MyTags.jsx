@@ -9,6 +9,12 @@ export const MyTags = (props) => {
             {
                 opts.map(o =>
                     <Tag color="green"
+                         style={{
+                             lineHeight: '0.9rem',
+                             fontSize: '0.9rem',
+                             height: '1.4rem',
+                             padding: '0.2rem'
+                         }}
                          title={`${o.label}: ${o.value}`}
                          key={o.label}
                          onClick={() => onTagClick(o.value)}
