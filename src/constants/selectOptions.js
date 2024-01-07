@@ -26,6 +26,50 @@ export const BinaryRelations = [
     },
 ]
 
+// 大型运算符
+export const BigOperator = [
+    {
+        label: '求和',
+        value: '\\sum_{i=0}^n',
+    },
+    {
+        label: '连乘',
+        value: '\\prod_{i=0}^n',
+    },
+    {
+        label: '积分',
+        value: '\\int_{a}^{b}',
+    },
+    {
+        label: '二重积分',
+        value: '\\iint',
+    },
+    {
+        label: '开根',
+        value: '\\sqrt[b]{a}',
+    },
+    {
+        label: 'log函数',
+        value: '\\log_{a}{b}',
+    },
+    {
+        label: '分数',
+        value: '\\frac{1}{2}',
+    },
+    {
+        label: '绝对值',
+        value: '\\vert X \\vert',
+    },
+    {
+        label: '组合1',
+        value: '\\binom{n}{k}',
+    },
+    {
+        label: '组合2',
+        value: 'C_n^k',
+    },
+]
+
 // 其他符号
 export const others = [
     {
@@ -47,7 +91,7 @@ export const others = [
 ]
 
 // 希腊字母
-export const Greek =[
+export const Greek = [
     {
         label: 'α',
         value: '\\alpha',
@@ -147,7 +191,7 @@ export const Greek =[
 ]
 
 // 花体字
-export  const FlowerFont=[
+export const FlowerFont = [
     {
         label: 'Blackboard bold',
         value: '\\mathbb{Aa,Rr,Kk}',

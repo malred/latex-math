@@ -2,7 +2,7 @@ import TextArea from "antd/es/input/TextArea";
 import {useState} from "react";
 import {Card, Collapse, Select, Tag} from "antd";
 import {MathJaxFormula} from "mathjax3-react";
-import {BinaryOperator, Greek,FlowerFont, others, BinaryRelations} from "../constants/selectOptions";
+import {BinaryOperator, Greek, FlowerFont, others, BinaryRelations, BigOperator} from "../constants/selectOptions";
 import {MyTags} from "./MyTags";
 
 export const Container = () => {
@@ -27,6 +27,10 @@ export const Container = () => {
             label: '二元关系符',
         },
         {
+            key: 'big',
+            label: '大型运算符',
+        },
+        {
             key: 'others',
             label: '特殊符号',
         },
@@ -46,6 +50,7 @@ export const Container = () => {
         others: <MyTags onTagClick={onTagClick} opts={others}></MyTags>,
         greek: <MyTags onTagClick={onTagClick} opts={Greek}></MyTags>,
         flower: <MyTags onTagClick={onTagClick} opts={FlowerFont}></MyTags>,
+        big: <MyTags onTagClick={onTagClick} opts={BigOperator}></MyTags>,
     };
 
     return (
