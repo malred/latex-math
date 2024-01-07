@@ -1,20 +1,56 @@
 // 二元运算符
 export const BinaryOperator = [
     {
-        label: '±',
+        label: '加减±',
         value: '\\pm',
     },
     {
-        label: '×',
+        label: '乘×',
         value: '\\times',
     },
     {
-        label: '∩',
+        label: '交集∩',
         value: '\\cap',
     },
     {
-        label: '∪',
+        label: '并集∪',
         value: '\\cup',
+    },
+    {
+        label: '逻辑或∨',
+        value: '\\vee',
+    },
+    {
+        label: '逻辑与∧',
+        value: '\\wedge',
+    },
+    {
+        label: '集合A减B',
+        value: 'A\\setminus B',
+    },
+    {
+        label: '除 ÷',
+        value: '\\div',
+    },
+    {
+        label: '减加∓',
+        value: '\\mp',
+    },
+    {
+        label: '大交集⋂',
+        value: '\\bigcap',
+    },
+    {
+        label: '大并集⋃',
+        value: '\\bigcup',
+    },
+    {
+        label: '大号逻辑或',
+        value: '\\bigvee',
+    },
+    {
+        label: '大号逻辑与',
+        value: '\\bigwedge',
     },
 ]
 
