@@ -68,7 +68,7 @@ export const Container = () => {
 
     return (
         <div className={'m-12'}>
-            <Card className={'my-8 text-xl'} title="latex公式" bordered={false}>
+            <Card className={'my-8 text-xl'} title="latex公式编辑器" bordered={false}>
                 {/*<Collapse*/}
                 {/*    className={'w-1/4'}*/}
                 {/*    items={items}*/}

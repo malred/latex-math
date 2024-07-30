@@ -13,7 +13,8 @@ export const MyTags = (props) => {
                              lineHeight: '0.9rem',
                              fontSize: '0.9rem',
                              height: '1.4rem',
-                             padding: '0.2rem'
+                             padding: '0.2rem',
+                             cursor: 'pointer',
                          }}
                          title={`${o.label}: ${o.value}`}
                          key={o.label}

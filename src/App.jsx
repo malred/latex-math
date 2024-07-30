@@ -14,6 +14,7 @@ const layoutStyle = {
 };
 
 function App() {
+    // todo: about page/langchain写latex公式/footer跳转其他产品/百度广告
 
     return (
         <MathJaxProvider>

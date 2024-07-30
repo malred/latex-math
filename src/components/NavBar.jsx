@@ -15,7 +15,11 @@ export const NavBar = () => {
                     </a>
                 </div>
                 <div className={'flex-1'}></div>
-                <div className={'text-2xl font-semibold'}>Malred</div>
+                <div className={'text-2xl font-semibold'}>
+                    <a href="https://github.com/malred">
+                        Malred
+                    </a>
+                </div>
                 {/*</div>*/}
                 {/*<div className="flex lg:flex-1">*/}
                 {/*    <a href="#" className="-m-1.5 p-1.5">*/}
